@@ -3,5 +3,6 @@
 # will probably increase as time goes
 apt update
 apt upgrade
+apt install seclists
 setxkbmap -model abnt2 -layout br
 touch ~/.hushlogin
