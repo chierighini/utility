@@ -10,5 +10,4 @@ do
     else
         makepkg -si
     fi
-    
 done
