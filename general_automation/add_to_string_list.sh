@@ -9,6 +9,7 @@ do
     esac
 done
 
-NEW="$(grep "$target.*]" $file | sed 's/]$//')"
+NEW="$(grep "$target.*]" $file | sed -e 's/^ *//')"
+NEW2=${NEW::-1}
 
 sed -i "s/$target.*]/$NEW, \"$content\"]/" $file
