@@ -1,0 +1,1 @@
+alias decode-aws="aws sts decode-authorization-message --encoded-message=$1 | jq --raw-output '.DecodedMessage' | jq ."
