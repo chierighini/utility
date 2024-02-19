@@ -1,1 +1,1 @@
-alias decode-aws="aws sts decode-authorization-message --encoded-message=$1 | jq --raw-output '.DecodedMessage' | jq ."
+alias decode-aws="function _decode_shit(){aws sts decode-authorization-message --encoded-message=$1 | jq --raw-output '.DecodedMessage' | jq .}"
